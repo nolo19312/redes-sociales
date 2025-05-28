@@ -1,0 +1,131 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+
+  .container {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+      "header header"
+      "sidebar main"
+      "footer footer";
+    height: 100vh;
+  }
+  
+
+  .header {
+    grid-area: header;
+    background-color: #00796b;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  
+
+  .sidebar {
+    grid-area: sidebar;
+    background-color: #004d40;
+    color: white;
+    padding: 20px;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+  }
+  
+  .sidebar li {
+    margin: 15px 0;
+  }
+  
+  .sidebar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .sidebar a:hover {
+    background-color: #00796b;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  .sidebar i {
+    margin-right: 10px;
+  }
+  
+
+  .main {
+    grid-area: main;
+    padding: 20px;
+  }
+  
+  .content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .footer {
+    grid-area: footer;
+    background-color: #004d40;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer h3 {
+    margin-bottom: 15px;
+  }
+  
+  footer form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  footer label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  footer input, footer textarea {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #00796b;
+    border-radius: 5px;
+  }
+  
+  footer button {
+    padding: 10px 20px;
+    background-color: #00796b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  footer button:hover {
+    background-color: #004d40;
+  }
+  p{
+    text-align: justify;
+  }
+  img{
+    display: inline;
+  }
